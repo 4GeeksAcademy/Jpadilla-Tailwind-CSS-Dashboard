@@ -1,0 +1,12 @@
+/* ==========================================================================
+   HOJA DE ESTILOS DE INICIALIZACIÓN OFICIAL - TAILWIND CSS v4
+   ========================================================================= */
+
+/* Importación de la capa base de utilidades nativas de la versión 4 */
+@import "tailwindcss";
+
+/* Comportamientos globales del documento (sin añadir CSS redundante o contradictorio) */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}

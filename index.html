@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfluencerAnalytics Pro - Panel de Conversión Multicanal</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <header class="bg-slate-800/80 border-b border-slate-700/60 sticky top-0 z-50 backdrop-blur-md" role="banner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+            
+            <div class="flex items-center gap-3 shrink-0">
+                <span class="text-xl sm:text-2xl font-black text-violet-400 tracking-tight">Influencer<span class="text-slate-400 font-light text-base sm:text-lg">Analytics</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-6" aria-label="Navegación del Dashboard">
+                <a href="#kpis" class="text-sm font-medium text-slate-300 hover:text-violet-400 transition-colors">Indicadores Principales</a>
+                <a href="#drivers" class="text-sm font-medium text-slate-300 hover:text-violet-400 transition-colors">Drivers de Rendimiento</a>
+                <a href="#detalles" class="text-sm font-medium text-slate-300 hover:text-violet-400 transition-colors">Detalles Operacionales</a>
+            </nav>
+            
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full text-xs font-semibold bg-violet-500/10 text-violet-400 border border-violet-500/20">
+                    <span class="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse"></span>
+                    APIs Consolidadas (IG, TT, YT)
+                </span>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="contenido-principal" class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow flex flex-col gap-10">
+        
+        <section class="bg-gradient-to-br from-slate-800 to-slate-800/60 rounded-2xl border border-slate-700/50 p-6 shadow-xl flex flex-col gap-4">
+            <div class="flex flex-col gap-1">
+                <p class="text-xs font-bold uppercase tracking-widest text-violet-400">Propuesta de Monitoreo de Conversiones</p>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Consolidación de Canales y Atribución de Ingresos</h1>
+            </div>
+            <p class="text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
+                Este panel unifica las métricas de dispersión de tus cuentas de Instagram, TikTok y YouTube. Permite supervisar de forma ágil el volumen de ingresos generados mediante tu **comisión del 15%** sobre el catálogo exclusivo de productos patrocinados (*GlowKit*, *Creator Bootcamp* y *Estilo Planner*), evaluando qué plataforma devuelve un mejor retorno de inversión.
+            </p>
+        </section>
+
+        <section id="kpis" class="flex flex-col gap-4" aria-labelledby="titulo-kpis">
+            <h2 id="titulo-kpis" class="text-lg font-bold text-slate-300 tracking-wide uppercase flex items-center gap-2">
+                <span class="w-2 h-4 bg-violet-500 rounded-sm"></span> 1. Indicadores Principales (Resultados Globales)
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700/60 flex flex-col justify-between hover:border-slate-600 transition-colors shadow-sm">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-xs text-slate-400 font-medium block">Total Comisiones Generadas (15%)</span>
+                        <span class="text-2xl font-bold text-emerald-400 tracking-tight">4,365.00 €</span>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Ventas Totales: 29,100.00 €</span>
+                        <span class="text-emerald-500 font-medium">↑ 12.4% este mes</span>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700/60 flex flex-col justify-between hover:border-slate-600 transition-colors shadow-sm">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-xs text-slate-400 font-medium block">Conversión Promedio de Anuncios</span>
+                        <span class="text-2xl font-bold text-white tracking-tight">3.24%</span>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Alcance Global: 124K usuarios</span>
+                        <span class="text-violet-400 font-medium">318 Conversiones</span>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700/60 flex flex-col justify-between hover:border-slate-600 transition-colors shadow-sm sm:col-span-2 lg:col-span-1">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-xs text-slate-400 font-medium block">Engagement Rate Consolidado</span>
+                        <span class="text-2xl font-bold text-white tracking-tight">5.82%</span>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Total Interacciones: 18.2K</span>
+                        <span class="text-amber-400 font-medium">YouTube liderando</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="drivers" class="flex flex-col gap-4" aria-labelledby="titulo-drivers">
+            <h2 id="titulo-drivers" class="text-lg font-bold text-slate-300 tracking-wide uppercase flex items-center gap-2">
+                <span class="w-2 h-4 bg-indigo-500 rounded-sm"></span> 2. Drivers Estratégicos (Rendimiento por Canal y Producto)
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/40 rounded-xl p-5 border border-slate-700/40 flex flex-col gap-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-pink-500/10 flex items-center justify-center text-pink-400 text-xs font-bold">📱</div>
+                        <h3 class="text-base font-bold text-white">Por Plataforma</h3>
+                    </div>
+                    <div class="flex flex-col gap-2 text-xs">
+                        <div class="flex justify-between py-1 border-b border-slate-800">
+                            <span class="text-slate-400">Instagram (Alta Conversión)</span>
+                            <span class="font-bold text-white">4.1% CR</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-800">
+                            <span class="text-slate-400">TikTok (Mayor Alcance)</span>
+                            <span class="font-bold text-white">1.8% CR</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-400">YouTube (Mejor Retorno)</span>
+                            <span class="font-bold text-white">3.8% CR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 rounded-xl p-5 border border-slate-700/40 flex flex-col gap-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xs font-bold">📦</div>
+                        <h3 class="text-base font-bold text-white">Por Producto</h3>
+                    </div>
+                    <div class="flex flex-col gap-2 text-xs">
+                        <div class="flex justify-between py-1 border-b border-slate-800">
+                            <span class="text-slate-400">Creator Bootcamp (120€)</span>
+                            <span class="font-bold text-emerald-400">2,430€ comisiones</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-800">
+                            <span class="text-slate-400">Estilo Planner Pro (80€)</span>
+                            <span class="font-bold text-slate-200">1,152€ comisiones</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-400">GlowKit Preset Pack (50€)</span>
+                            <span class="font-bold text-slate-200">783€ comisiones</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 rounded-xl p-5 border border-slate-700/40 flex flex-col gap-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center text-violet-400 text-xs font-bold">📊</div>
+                        <h3 class="text-base font-bold text-white">Funnel / Actividad</h3>
+                    </div>
+                    <div class="flex flex-col gap-2 text-xs">
+                        <div class="flex justify-between py-1 border-b border-slate-800">
+                            <span class="text-slate-400">Contenido Publicado</span>
+                            <span class="font-bold text-white">42 (Posts/Videos)</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-800">
+                            <span class="text-slate-400">Clicks Totales (CTR)</span>
+                            <span class="font-bold text-white">8.4K clicks (6.7%)</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-400">Tasa de Compleción</span>
+                            <span class="font-bold text-white">78% Carritos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="detalles" class="flex flex-col gap-6" aria-labelledby="titulo-tablas">
+            <div class="flex flex-col gap-1">
+                <h2 id="titulo-tablas" class="text-lg font-bold text-slate-300 tracking-wide uppercase flex items-center gap-2">
+                    <span class="w-2 h-4 bg-teal-500 rounded-sm"></span> 3. Detalles Operacionales y Listados
+                </h2>
+                <p class="text-xs text-slate-400">Métricas granulares desglosadas por catálogo de productos y canales sociales.</p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl border border-slate-700/60 overflow-hidden shadow-lg">
+                <div class="bg-slate-900/40 p-4 border-b border-slate-700/50">
+                    <h3 class="text-sm font-bold text-white">Desglose de Conversión por Catálogo Exclusivo</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-900/60 text-slate-300 text-xs font-semibold tracking-wider uppercase border-b border-slate-700">
+                                <th class="p-4 whitespace-nowrap">Producto Patrocinado</th>
+                                <th class="p-4 whitespace-nowrap">Precio Venta</th>
+                                <th class="p-4 whitespace-nowrap">Comisión Unitaria (15%)</th>
+                                <th class="p-4 whitespace-nowrap">Ventas Logradas</th>
+                                <th class="p-4 whitespace-nowrap text-right">Comisiones Totales</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-xs divide-y divide-slate-700/50 text-slate-300">
+                            <tr class="hover:bg-slate-700/30 transition-colors">
+                                <td class="p-4 font-bold text-white whitespace-nowrap">GlowKit Preset Pack</td>
+                                <td class="p-4 whitespace-nowrap font-mono text-slate-400">50.00 €</td>
+                                <td class="p-4 whitespace-nowrap font-mono text-emerald-400">7.50 €</td>
+                                <td class="p-4 whitespace-nowrap text-slate-400">104 unidades</td>
+                                <td class="p-4 whitespace-nowrap text-right font-mono font-bold text-white">783.00 €</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/30 transition-colors">
+                                <td class="p-4 font-bold text-white whitespace-nowrap">Creator Bootcamp</td>
+                                <td class="p-4 whitespace-nowrap font-mono text-slate-400">120.00 €</td>
+                                <td class="p-4 whitespace-nowrap font-mono text-emerald-400">18.00 €</td>
+                                <td class="p-4 whitespace-nowrap text-slate-400">135 unidades</td>
+                                <td class="p-4 whitespace-nowrap text-right font-mono font-bold text-white">2,430.00 €</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/30 transition-colors">
+                                <td class="p-4 font-bold text-white whitespace-nowrap">Estilo Planner Pro</td>
+                                <td class="p-4 whitespace-nowrap font-mono text-slate-400">80.00 €</td>
+                                <td class="p-4 whitespace-nowrap font-mono text-emerald-400">12.00 €</td>
+                                <td class="p-4 whitespace-nowrap text-slate-400">96 unidades</td>
+                                <td class="p-4 whitespace-nowrap text-right font-mono font-bold text-white">1,152.00 €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-emerald-950/30 border border-emerald-500/20 rounded-xl p-4 flex gap-3 items-start">
+                    <span class="text-emerald-400 text-base">📈</span>
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Pico de Conversión Detectado</span>
+                        <p class="text-xs text-slate-300">El último video de YouTube sobre el "Creator Bootcamp" duplicó el CTR esperado en las primeras 48 horas.</p>
+                    </div>
+                </div>
+                <div class="bg-amber-950/30 border border-amber-500/20 rounded-xl p-4 flex gap-3 items-start">
+                    <span class="text-amber-400 text-base">⚠️</span>
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Anomalía en Retorno / Costes</span>
+                        <p class="text-xs text-slate-300">Las pautas promocionadas en TikTok muestran un coste por clic elevado con baja tasa de conversión en "GlowKit".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-500 py-6 border-t border-slate-800 text-center text-xs mt-auto" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col gap-1">
+            <p class="text-slate-400 font-medium">InfluencerAnalytics Pro &copy; 2026</p>
+            <p>Métricas de Conversión y Rendimiento de Anuncios Estructurados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
